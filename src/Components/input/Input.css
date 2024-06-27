@@ -1,0 +1,36 @@
+.input-Session{
+    position: relative;
+}
+
+.form_input{
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-weight: 400;
+    padding: .5rem .25rem;
+    color: var(--input-text-color);
+    font-size: var(--input-text-size);
+}
+
+.form_input:focus{
+    border-color: var(--input-focus-border-color);
+}
+
+.form_input::-webkit-outer-spin-button,
+.form_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form_label{
+    font-weight: 550;
+    user-select: none;
+    color: var(--input-label-color);
+    font-size: var(--input-label-size);
+}
+
+.eye{
+    width: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}

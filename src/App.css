@@ -1,0 +1,76 @@
+body{
+    background: rgb(86, 240, 199);
+    height: 100vh;
+}
+
+.wrapper{
+    background: white;
+    /* width: 450px; */
+    padding: 35px 25px;
+    border-radius: 10px;
+    transition: .5s;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.nameFeild{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameFeild input{
+    flex-basis: 50% 50%;
+}
+
+.wrapper.active::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper .login-form{
+    width: 100%;
+    transition: transform .6s ease;
+    transform: translateX(0px);
+}
+
+.wrapper.active .login-form{
+    width: max-content !important;
+    transition: none;
+    transform: translateX(-1400px);
+}
+
+.wrapper .register-form{
+    position: absolute;
+    transition: none;
+    transform: translateX(900px);
+}
+
+.wrapper.active .register-form{
+    width: 90%;
+    transition: transform .6s ease;
+    transform: translateX(0px);
+}
+
+.signUp_link{
+    cursor: pointer;
+    transition: .5s;
+}
+
+.signUp_link:hover{
+    color: rgb(1, 143, 96);
+}
+
+.signin_link{
+    cursor: pointer;
+    transition: .5s;
+}
+
+.signin_link:hover{
+    color: rgb(1, 143, 96);
+}
+
+@media only screen and (max-width: 576px) {
+    .wrapper.active {
+        height: 700px;
+    }
+}

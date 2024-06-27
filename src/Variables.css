@@ -1,0 +1,12 @@
+:root{
+    --primary-color: #0000c9;
+    --primary-hover-color: #02028f;
+    --border: 1.5px solid black;
+    --border-radius: 5px;
+    --input-label-color: black;
+    --input-text-color: black;
+    --input-focus-border-color: rgb(0, 183, 255);
+    --input-label-size: 16px;
+    --input-text-size: 14px;
+    --button-text-color: white;
+}
